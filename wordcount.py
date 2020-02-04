@@ -6,10 +6,10 @@ def word_count(filename):
 
     for line in filename:
         line = line.rstrip()
-        line = line.split(" ")
-        
-        for word in line:
 
+        words = line.split(" ")
+
+        for word in words:
             word_dict[word] = word_dict.get(word, 0) + 1
 
     for word, number in word_dict.items():
